@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Glory;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+:root.dark{
+    --bg-color: black;
+    --txt-color:#fff;
+    --bg-color-slidbox:#fff;
+    --sicons-color:#000;
+    --icons-color : #fff;
+    --bg-sliderbox-color:#fff;
+    --bg-licons-color:#fff;
+    --licons-color:#000;
+    --bg-nav-color:#fff;
+    --nav-icon-color:#000;
+}
+:root.light{
+    --bg-color: #DBD8C9;
+    --txt-color:#000;
+    --bg-color-slidbox:#000;
+    --sicons-color:#fff;
+    --icons-color : #000;
+    --bg-sliderbox-color:#000;
+    --bg-licons-color:#000;
+    --licons-color:#fff;
+    --bg-nav-color:#000;
+    --nav-icon-color:#fff;
+}
+
+i{
+    cursor: pointer;
+    color: var(--icons-color);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    background-color: var(--bg-color);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper{
+    /* border: 1px solid rebeccapurple; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+    
+}
+
+.imagecenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 1;
+    width:40%;
+   
+   
+}
+.imagecenter >img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--txt-color);
+}
+.header{
+    /* border: 1px  solid rebeccapurple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    background-color: var(--bg-nav-color);
+    /* background-color: red; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon > i{
+    color: var(--nav-icon-color);
+    font-size: 12px;
+}
+
+
+.main{
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 100%; */
+    height: calc(100% - 50px);
+}
+.left{
+    width: 28%;
+    /* height: 100%; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.right{
+    width: 30%;
+    height: 100%;
+
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesilderbox{
+    width: 150px;
+    height: 80px;
+    /* background-color: black; */
+    display: flex;
+    /* padding: 10px; */
+    /* border: 1px solid red; */
+    
+}
+.imagesilderbox > img{
+    width: 80%;
+    height: 100%;
+}
+.imagesilderbox > .slidicon{
+    width: 20%;
+    height: 100%;
+    /* background-color: red; */
+    background-color: var(--bg-color-slidbox);
+    /* opacity: 0.6; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagebox{
+/* z-index: 9999; */
+width: 80%;
+background-image: url('https://images.unsplash.com/photo-1608232543731-44d2ebe84dd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+background-position: center;
+background-size: cover;
+}
+.slidicon > i{
+    color: var(--sicons-color);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+
+span{
+    color: var(--txt-color);
+    opacity: .6;
+    margin-top: 10px;
+}
+#para{
+    color: var(--txt-color);
+    opacity: .8;
+    width:60%;
+    /* border: 1px solid green; */
+    font-size: 12px;
+}
+.left > h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--txt-color);
+}
+.left > h3{
+    color: var(--txt-color);
+}
+#logo{
+    color: var(--txt-color);
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+.ficons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.licons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.licons >  i{
+    width: 25px;
+    height: 25px;
+    /* background-color: red; */
+    background-color: var(--bg-licons-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--licons-color);
+   
+    
+}
+.ricons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.sliderbox{
+width: 10px;
+height: 10px;
+background-color: var(--bg-sliderbox-color);
+border-radius: 50%;
+}
